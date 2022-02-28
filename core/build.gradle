@@ -1,0 +1,11 @@
+description 'caverj project core'
+
+dependencies {
+    if(isAndroidBuild) {
+        compile "org.web3j:core:$web3j_androidVersion"
+    } else {
+        compile "org.web3j:core:$web3jVersion"
+    }
+
+    compile "com.github.ipfs:java-ipfs-http-client:$ipfsVersion"
+}
